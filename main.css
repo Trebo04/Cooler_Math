@@ -4,17 +4,17 @@ ul {
 	list-style-type: none;
 	border-radius: 25px;
 	background-color: #d65a31;
-	margin: 0;
+	margin: 1%;
 	padding: 0px;
 	width: auto;
 	height: auto;
 	overflow: hidden;
 }
-li {
+ul li {
 	float: left;
 }
 
-li a {
+ul li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -23,9 +23,15 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+ul li a:hover {
 	background-color: white; /* 393E46 */
 	color: #d65a31;
+}
+
+hr #hr_test {
+	background-color: #d65a31;
+	height: 2px;
+	border: none;
 }
 
 #page-container {
@@ -46,6 +52,7 @@ li a:hover {
 	height: fit-content(20em); /* Footer height */
 	background-color: #393e46;
 	text-align: center;
+	font-size: x-small;
 }
 
 body {
