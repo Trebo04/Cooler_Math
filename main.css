@@ -1,78 +1,82 @@
-  ul {
-    list-style-type: none;
-    border-radius: 25px;
-    background-color: #D65A31;
-    margin: 0;
-    padding: 0px;
-    width: auto;
-    height: auto;
-    overflow: hidden;
-  }
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: white; /* 393E46 */
-    color: #D65A31;
-  }
+/** @format */
 
-  #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: fit-content(20em);    /* Footer height [2.5rem][auto][fit-content(20em)]*/
-  }
-  
-  #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: fit-content(20em);            /* Footer height */
-    background-color: #393E46;
-    text-align: center;
-  }
+ul {
+	list-style-type: none;
+	border-radius: 25px;
+	background-color: #d65a31;
+	margin: 0;
+	padding: 0px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+li {
+	float: left;
+}
 
-  body {
-    font-family: sans-serif;              /* [sans-serif][Papyrus] */
-    background-color: black;
-    color: #D65A31;
-    text-align: center;
-  }
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
 
-  h1 {
-    text-align: center;
-  }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: white; /* 393E46 */
+	color: #d65a31;
+}
 
-  a {
-    color: white;
-  }
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
 
-  footer a {
-    color: #D65A31;
-  }
+#content-wrap {
+	padding-bottom: fit-content(
+		20em
+	); /* Footer height [2.5rem][auto][fit-content(20em)]*/
+}
 
-  #start {
-    text-align: center;
-    animation: fade 1s ease-in 0s infinite alternate-reverse forwards;
-  }
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: fit-content(20em); /* Footer height */
+	background-color: #393e46;
+	text-align: center;
+}
 
-  @keyframes fade {
-    0% {
-      opacity: .25;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+body {
+	font-family: sans-serif; /* [sans-serif][Papyrus] */
+	background-color: black;
+	color: #d65a31;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	color: white;
+}
+
+footer a {
+	color: #d65a31;
+}
+
+#start {
+	text-align: center;
+	animation: fade 1s ease-in 0s infinite alternate-reverse forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 1;
+	}
+}
