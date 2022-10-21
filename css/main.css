@@ -56,7 +56,7 @@ hr #hr_test {
 }
 
 body {
-  cursor: url("png/cursor.png"), auto;
+  cursor: url("/png/cursor.png"), auto;
 	font-family: sans-serif; /* [sans-serif][Papyrus] */
 	background-color: black;
 	color: #d65a31;
