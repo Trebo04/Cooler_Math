@@ -10,6 +10,7 @@ ul {
 	height: auto;
 	overflow: hidden;
 }
+
 ul li {
 	float: left;
 }
@@ -24,7 +25,8 @@ ul li a {
 
 /* Change the link color to #111 (black) on hover */
 ul li a:hover {
-	background-color: white; /* 393E46 */
+	background-color: white;
+	/* 393E46 */
 	color: #d65a31;
 }
 
@@ -40,24 +42,25 @@ hr #hr_test {
 }
 
 #content-wrap {
-	padding-bottom: fit-content(
-		20em
-	); /* Footer height [2.5rem][auto][fit-content(20em)]*/
+	padding-bottom: fit-content(20em);
+	/* Footer height [2.5rem][auto][fit-content(20em)]*/
 }
 
 #footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: fit-content(20em); /* Footer height */
+	height: fit-content(20em);
+	/* Footer height */
 	background-color: #393e46;
 	text-align: center;
 	font-size: x-small;
 }
 
 body {
-  cursor: url("/png/cursor.png"), auto;
-	font-family: sans-serif; /* [sans-serif][Papyrus] */
+	cursor: url("/png/cursor.png"), auto;
+	font-family: sans-serif;
+	/* [sans-serif][Papyrus] */
 	background-color: black;
 	color: #d65a31;
 	text-align: center;
@@ -84,6 +87,7 @@ footer a {
 	0% {
 		opacity: 0.25;
 	}
+
 	100% {
 		opacity: 1;
 	}
