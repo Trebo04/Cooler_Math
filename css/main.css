@@ -58,7 +58,7 @@ hr #hr_test {
 }
 
 body {
-	cursor: url("jfif/cool_pupmkin.jfif"), auto;
+	cursor: url("/png/cool_pumpkin.png"), auto;
 	font-family: sans-serif;
 	/* [sans-serif][Papyrus] */
 	background-color: black;
