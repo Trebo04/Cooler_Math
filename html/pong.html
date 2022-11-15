@@ -3,6 +3,11 @@
 <html lang="en">
 
 <head>
+    <style>
+        #page-container {
+            font-family: "customfont";
+        }
+    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,11 +34,18 @@
                 PONG
                 <br />
                 <hr />
-                <div id="start">START</div>
+                <!--<div id="start">START</div>-->
+                <div id="gameContainer">
+                    <canvas id="gameBoard" width="500" height="500"></canvas>
+                    <div id="scoreText">0 : 0</div>
+                    <button id="resetBtn" style="font-family: customfont">RESET</button>
+                </div>
+                <script src="index_pong.js"></script>
             </h1>
+            <br><br><br>
         </div>
         <footer id="footer">
-<!--
+            <!--
 <a href="/html/legal.html">Conditions of Use</a>
 <a href="/html/legal.html">Privacy Notice</a>
 <a href="/html/legal.html">Interest-Based Ads</a>
