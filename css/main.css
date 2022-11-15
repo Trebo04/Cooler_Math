@@ -23,7 +23,7 @@ ul li {
 
 ul li a {
 	display: block;
-	color: white;
+	color: #232e41;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -31,7 +31,7 @@ ul li a {
 
 /* Change the link color to #111 (black) on hover */
 ul li a:hover {
-	background-color: white;
+	background-color: #232e41;
 	/* 393E46 */
 	color: aqua;
 }
