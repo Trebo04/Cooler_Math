@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="29" height="14" tilewidth="35" tileheight="35" infinite="0" backgroundcolor="#d0f4f7" nextlayerid="12" nextobjectid="54">
+ <tileset firstgid="1" source="tileset.tsx"/>
+ <imagelayer id="1" name="Background" y="538" offsetx="-6.59091" offsety="-9.04545">
+  <image source="../img/background.png" width="1024" height="512"/>
+  <properties>
+   <property name="anchorPoint" value="json:{&quot;x&quot;:0,&quot;y&quot;:1}"/>
+   <property name="ratio" value="0.25"/>
+   <property name="repeat" value="repeat-x"/>
+  </properties>
+ </imagelayer>
+ <objectgroup color="#00ff00" id="5" name="Player">
+  <object id="16" name="mainPlayer" x="51" y="211" width="35" height="88"/>
+  <object id="17" name="me.Trigger" x="16" y="-25" width="20" height="532">
+   <properties>
+    <property name="duration" value="150"/>
+    <property name="fade" value="#fff"/>
+    <property name="to" value="map2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="9" name="Flies">
+  <object id="4" name="FlyEntity" x="3.1364" y="3.3636" width="1007.18" height="484.591">
+   <properties>
+    <property name="animationspeed" value="200"/>
+    <property name="frameheight" value="35"/>
+    <property name="framewidth" value="70"/>
+    <property name="gravity" value="0"/>
+    <property name="velX" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="Collision" offsetx="0.666667" offsety="2.66667">
+  <object id="13" class="platform" x="103.145" y="484.568">
+   <polyline points="-102.554,-1.82 907.45,-0.36"/>
+  </object>
+  <object id="46" class="platform" x="3.76843" y="607.169">
+   <polyline points="-6.6e-05,-605.836 0.000584003,-119.836"/>
+  </object>
+  <object id="47" class="platform" x="108.872" y="3.69333">
+   <polyline points="-101.538,-1.82 898.465,-0.36"/>
+  </object>
+  <object id="48" class="platform" x="1009.33" y="603.333">
+   <polyline points="-6.6e-05,-605.836 0.000584003,-119.836"/>
+  </object>
+  <object id="50" x="-38.6667" y="489.333" width="1068" height="16"/>
+  <object id="51" x="1011.33" y="-30.6667" width="24" height="538"/>
+  <object id="52" x="-25.1212" y="-28.6667" width="28" height="524"/>
+  <object id="53" x="-2.66667" y="-34.3485" width="1032" height="34"/>
+ </objectgroup>
+</map>
