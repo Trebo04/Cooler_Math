@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
 ?>
 
 <!-- Hello Inspect Element :D -->
@@ -24,7 +31,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="asteroids.html">Asteroids</a></li>
                     <li><a href="pong.html">PONG</a></li>
-                    <li style="float: right"><a href="account.html">Account</a></li>
+                    <li style="float: right"><a href="logout.php">Logout</a></li>
+                    <li style="float: right"><a href="login.php">Account<br><?php echo $user_data['user_name']; ?></a></li>
                 </ul>
             </nav>
             <div id="title">
