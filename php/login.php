@@ -157,7 +157,7 @@ session_start();
                 <div class="imgcontainer">
                     <img src="/png/high_def_icon.png" alt="Avatar" class="avatar">
                 </div>
-
+<!--
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -175,6 +175,20 @@ session_start();
                     <button type="button" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
+    -->
+<div id="box">
+    
+    <form method="post">
+        <div style="font-size: 20px;margin: 10px;color: white;">Login</div>
+
+        <input id="text" type="text" name="user_name"><br><br>
+        <input id="text" type="password" name="password"><br><br>
+
+        <input id="button" type="submit" value="Login"><br><br>
+
+        <a href="signup.php">Click to Signup</a><br><br>
+    </form>
+</div>
             </form>
         </div>
         <!--<footer id="footer">
