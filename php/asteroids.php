@@ -35,7 +35,7 @@
       </h1>
     </div>
     <footer id="footer">
-<!--
+      <!--
 <a href="legal.php">Conditions of Use</a>
 <a href="legal.php">Privacy Notice</a>
 <a href="legal.php">Interest-Based Ads</a>

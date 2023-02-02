@@ -2,10 +2,10 @@
 
 session_start();
 
-	include("connection.php");
-	include("functions.php");
+include("connection.php");
+include("functions.php");
 
-	$user_data = check_login($con);
+$user_data = check_login($con);
 
 ?>
 
@@ -32,13 +32,15 @@ session_start();
                     <li><a href="asteroids.php">Asteroids</a></li>
                     <li><a href="pong.php">PONG</a></li>
                     <li style="float: right"><a href="logout.php">Logout</a></li>
-                    <li style="float: right"><a href="login.php">Account<br><?php echo $user_data['user_name']; ?></a></li>
+                    <li style="float: right"><a href="login.php">Account<br>
+                            <?php echo $user_data['user_name']; ?>
+                        </a></li>
                 </ul>
             </nav>
             <div id="title">
                 <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
             </div>
-            <hr/>
+            <hr />
             <h2>About</h2>
             <p>
                 This website <i>will</i>
@@ -46,7 +48,8 @@ session_start();
                 be <b>better</b>
                 <!-- <b> is the same as <strong> -->
                 than
-                <a href="https://www.coolmath.com" target="_blank" title="This takes you to the worse website">coolmath</a>.
+                <a href="https://www.coolmath.com" target="_blank"
+                    title="This takes you to the worse website">coolmath</a>.
             </p>
             <!--Default target is _self-->
             <h2>Games</h2>
@@ -54,7 +57,7 @@ session_start();
             <li><a href="pong.php">PONG</a></li>
         </div>
         <footer id="footer">
-<!--
+            <!--
 <a href="legal.php">Conditions of Use</a>
 <a href="legal.php">Privacy Notice</a>
 <a href="legal.php">Interest-Based Ads</a>
