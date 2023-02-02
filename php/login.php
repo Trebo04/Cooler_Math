@@ -130,9 +130,9 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/png/icon.png" />
-    <link rel="apple-touch-icon" sizes="128x128" href="/png/high_def_icon.png" />
-    <link href="/css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/cooler_math/png/icon.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/cooler_math/png/high_def_icon.png" />
+    <link href="/cooler_math/css/main.css" rel="stylesheet" />
     <title>Account | Cooler Math</title>
 </head>
 
@@ -142,10 +142,10 @@ session_start();
             <nav>
                 <ul id="rcorners1">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="/php/asteroids.php">Asteroids</a></li>
-                    <li><a href="/php/pong.php">PONG</a></li>
+                    <li><a href="asteroids.php">Asteroids</a></li>
+                    <li><a href="pong.php">PONG</a></li>
                     <li style="float: right">
-                        <a href="/php/account.php">Account</a>
+                        <a href="account.php">Account</a>
                     </li>
                 </ul>
             </nav>
@@ -155,7 +155,7 @@ session_start();
             </h1>
             <form action="action_page.php" method="post">
                 <div class="imgcontainer">
-                    <img src="/png/high_def_icon.png" alt="Avatar" class="avatar">
+                    <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
                 </div>
 <!--
                 <div class="container">
@@ -193,16 +193,16 @@ session_start();
         </div>
         <!--<footer id="footer">
             
-<a href="/php/legal.php">Conditions of Use</a>
-<a href="/php/legal.php">Privacy Notice</a>
-<a href="/php/legal.php">Interest-Based Ads</a>
+<a href="legal.php">Conditions of Use</a>
+<a href="legal.php">Privacy Notice</a>
+<a href="legal.php">Interest-Based Ads</a>
 
             <br />Cooler Math Games is optimized for gaming by gamers. Games might
             be simplified to improve gaming for bad gamers. Games are constantly
             reviewed to avoid errors, but we cannot warrant full correctness of all
             content. While using Cooler Math Games, you agree to have read and
             accepted our terms of use, cookie and privacy policy as well as
-            understanding our <a href="/php/legal.php">legal</a> page.
+            understanding our <a href="legal.php">legal</a> page.
             <br />Copyright 2022-<span style="color: aqua; font-size: small">∞</span>
             by Me. All Rights Reserved.
         </footer>-->

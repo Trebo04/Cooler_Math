@@ -17,9 +17,9 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/png/icon.png" />
-    <link rel="apple-touch-icon" sizes="128x128" href="/png/high_def_icon.png" />
-    <link href="/css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/cooler_math/png/icon.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/cooler_math/png/high_def_icon.png" />
+    <link href="/cooler_math/css/main.css" rel="stylesheet" />
     <title>Cooler Math</title>
 </head>
 
@@ -55,9 +55,9 @@ session_start();
         </div>
         <footer id="footer">
 <!--
-<a href="/php/legal.php">Conditions of Use</a>
-<a href="/php/legal.php">Privacy Notice</a>
-<a href="/php/legal.php">Interest-Based Ads</a>
+<a href="legal.php">Conditions of Use</a>
+<a href="legal.php">Privacy Notice</a>
+<a href="legal.php">Interest-Based Ads</a>
 -->
             Cooler Math Games is optimized for gaming by gamers. Games might be
             simplified to improve gaming for bad gamers. Games are constantly
