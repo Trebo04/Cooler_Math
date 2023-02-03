@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="icon" type="image/png" href="/cooler_math/png/icon.png" />
     <link rel="apple-touch-icon" sizes="128x128" href="/cooler_math/png/high_def_icon.png" />
     <link href="/cooler_math/css/main.css" rel="stylesheet" />
-    <title>Account | Cooler Math</title>
+    <title>login | Cooler Math</title>
 </head>
 
 <body>
@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <li><a href="asteroids.php">Asteroids</a></li>
                     <li><a href="pong.php">PONG</a></li>
                     <li style="float: right">
-                        <a href="account.php">Account</a>
+                        <a href="login.php">Account</a>
                     </li>
                 </ul>
             </nav>

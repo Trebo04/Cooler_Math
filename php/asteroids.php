@@ -24,7 +24,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="asteroids.php">Asteroids</a></li>
           <li><a href="pong.php">PONG</a></li>
-          <li style="float: right"><a href="account.php">Account</a></li>
+          <li style="float: right"><a href="login.php">Account</a></li>
         </ul>
       </nav>
       <h1>
