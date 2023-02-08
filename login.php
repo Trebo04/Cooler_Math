@@ -153,12 +153,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 Account
                 <hr />
             </h1>
-            <!--
-            <form action="action_page.php" method="post">
-                <div class="imgcontainer">
-                    <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
-                </div>
-                ------------
+
+                <!--
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -180,6 +176,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <div id="box">
 
                     <form method="post">
+                        <div class="imgcontainer">
+                            <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
+                        </div>
+
                         <div style="font-size: 20px;margin: 10px;color: white;">Login</div>
 
                         <input id="text" type="text" name="user_name"><br><br>
@@ -188,6 +188,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input id="button" type="submit" value="Login"><br><br>
 
                         <a href="signup.php">Click to Signup</a><br><br>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="home.php">password?</a></span>
+                        </div>
                     </form>
                 </div>
             </form>
