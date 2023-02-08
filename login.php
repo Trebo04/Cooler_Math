@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($user_data['password'] === $password) {
 
                     $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: index.php");
+                    header("Location: home.php");
                     die;
                 }
             }
@@ -153,11 +153,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 Account
                 <hr />
             </h1>
+            <!--
             <form action="action_page.php" method="post">
                 <div class="imgcontainer">
                     <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
                 </div>
-                <!--
+                ------------
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>

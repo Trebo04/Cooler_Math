@@ -32,9 +32,7 @@ $user_data = check_login($con);
                     <li><a href="asteroids.php">Asteroids</a></li>
                     <li><a href="pong.php">PONG</a></li>
                     <li style="float: right"><a href="logout.php">Logout</a></li>
-                    <li style="float: right"><a href="login.php">Account<br>
-                            <?php echo $user_data['user_name']; ?>
-                        </a></li>
+                    <li style="float: right"><a href="login.php">Account | <?php echo $user_data['user_name']; ?></a></li>
                 </ul>
             </nav>
             <div id="title">
