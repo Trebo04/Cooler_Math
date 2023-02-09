@@ -21,7 +21,7 @@
     <div id="content-wrap">
       <nav>
         <ul id="rcorners1">
-          <li><a href="index.php">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <li><a href="asteroids.php">Asteroids</a></li>
           <li><a href="pong.php">PONG</a></li>
           <li style="float: right"><a href="login.php">Account</a></li>

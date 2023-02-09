@@ -200,7 +200,7 @@
     </p>
     <hr />
     <h1 style="text-align: center">
-        <a style="color: aqua" href="index.php">return home</a>
+        <a style="color: aqua" href="home.php">return home</a>
     </h1>
 </body>
 

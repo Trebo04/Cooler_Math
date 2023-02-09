@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($user_data['password'] === $password) {
 
                     $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: home.php");
+                    header("Location: login.php");
                     die;
                 }
             }
@@ -141,7 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div id="content-wrap">
             <nav>
                 <ul id="rcorners1">
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="home.php">Home</a></li>
                     <li><a href="asteroids.php">Asteroids</a></li>
                     <li><a href="pong.php">PONG</a></li>
                     <li style="float: right">
