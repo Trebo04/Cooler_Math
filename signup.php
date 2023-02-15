@@ -32,6 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html>
 
 <head>
+	<style>
+		body {
+			background-color: #252525
+		}
+	</style>
 	<title>Signup</title>
 </head>
 
@@ -51,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 			padding: 10px;
 			width: 100px;
-			color: white;
-			background-color: lightblue;
+			color: black;
+			background-color: aqua;
 			border: none;
 		}
 

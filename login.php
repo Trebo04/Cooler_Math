@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($user_data['password'] === $password) {
 
                     $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: login.php");
+                    header("Location: home.php");
                     die;
                 }
             }
@@ -126,6 +126,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 width: 100%;
             }
         }
+        #box {
+            width: 500px;
+            margin: auto;
+        }
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -139,19 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <nav>
-                <ul id="rcorners1">
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="asteroids.php">Asteroids</a></li>
-                    <li><a href="pong.php">PONG</a></li>
-                    <li style="float: right">
-                        <a href="login.php">Account</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>
-                Account
-                <hr />
+            <h1>Account<hr/>
             </h1>
 
                 <!--
@@ -182,16 +174,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                         <div style="font-size: 20px;margin: 10px;color: white;">Login</div>
 
-                        <input id="text" type="text" name="user_name"><br><br>
-                        <input id="text" type="password" name="password"><br><br>
+                        <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
+                        <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
 
-                        <input id="button" type="submit" value="Login"><br><br>
-
-                        <a href="signup.php">Click to Signup</a><br><br>
-                        <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" class="cancelbtn">Cancel</button>
-                            <span class="psw">Forgot <a href="home.php">password?</a></span>
-                        </div>
+                        <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
+                        <div style="text-align: left"><a href="signup.php">Click to Signup</a></div><div style="text-align: right">Forgot <a href="home.php">password?</a></div>
                     </form>
                 </div>
             </form>
