@@ -69,7 +69,7 @@ $user_data = check_login($con);
 </head>
 
 <body>
-    <div class="sticky" style="text-align: center">😎Cooler Math Games🤔</div>
+    <div class="sticky" style="text-align: center">😎Cooler Math Games🤔<div style="text-align: right"><a href="login.php">Account | <?php echo $user_data['user_name']; ?></a></div></div>
     <h1>
         My
         <a href="https://github.com/Trebo04/Cooler_Math" target="_blank"><span style="cursor: text">code</span></a>

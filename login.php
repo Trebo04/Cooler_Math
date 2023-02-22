@@ -162,7 +162,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 <div class="container" style="background-color:#f1f1f1">
                     <button type="button" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
     -->
                 <div id="box">
@@ -171,14 +170,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <div class="imgcontainer">
                             <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
                         </div>
-
-                        <div style="font-size: 20px;margin: 10px;color: white;">Login</div>
+                        
+                        <?php
+                            
+                            echo $user_data['user_name'];
+                        ?>
+                        <div style="font-size: 20px;margin: 10px;color: #252525;">Login to Continue</div>
 
                         <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
                         <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
 
                         <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
-                        <div style="text-align: left"><a href="signup.php">Click to Signup</a></div><div style="text-align: right">Forgot <a href="home.php">password?</a></div>
+                        <button type="button" class="cancelbtn" type="">Cancel</button>
+                        <div class="container">
+                        <div style="text-align: left"><a href="signup.php">Click to Signup</a></div>
+                        <div style="text-align: right"><a href="home.php">Forgot Password?</a></div>
+                        </div>
                     </form>
                 </div>
             </form>

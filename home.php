@@ -38,7 +38,7 @@ $user_data = check_login($con);
             <div id="title">
                 <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
             </div>
-            <hr />
+            <hr/>
             <h2>About</h2>
             <p>
                 This website <i>will</i>
