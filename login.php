@@ -5,6 +5,7 @@ session_start();
 include("connection.php");
 include("functions.php");
 
+$user_data = check_login($con);
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
@@ -137,14 +138,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="icon" type="image/png" href="/cooler_math/png/icon.png" />
     <link rel="apple-touch-icon" sizes="128x128" href="/cooler_math/png/high_def_icon.png" />
     <link href="/cooler_math/css/main.css" rel="stylesheet" />
-    <title>login | Cooler Math</title>
+    <title>Login | Cooler Math</title>
 </head>
 
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <h1>Account<hr/>
-            </h1>
+            <h1>Account Login<hr></h1>
 
                 <!--
                 <div class="container">
@@ -172,8 +172,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </div>
                         
                         <?php
-                            
-                            echo $user_data['user_name'];
+                        if(isset($_SESSION['user_id'])) {
+                            echo $user_data['user_id'];
+                        }
                         ?>
                         <div style="font-size: 20px;margin: 10px;color: #252525;">Login to Continue</div>
 
@@ -183,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
                         <button type="button" class="cancelbtn" type="">Cancel</button>
                         <div class="container">
-                        <div style="text-align: left"><a href="signup.php">Click to Signup</a></div>
+                        <div style="text-align: right"><a href="signup.php">Click to Signup</a></div>
                         <div style="text-align: right"><a href="home.php">Forgot Password?</a></div>
                         </div>
                     </form>
