@@ -170,11 +170,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </div>
                         
                         <?php
-                        if(isset($_SESSION['user_id'])) {
-                            echo $user_data['user_id'];
+                        $condition = logged($con);
+                        $user_data = check_login($con);
+
+                        if($condition) {
+                            echo $user_data['user_name'];
+                        }
+                        else {
+                            echo "Login to Continue";
                         }
                         ?>
-                        <div style="font-size: 20px;margin: 10px;color: #252525;">Login to Continue</div>
 
                         <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
                         <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
