@@ -41,7 +41,7 @@ function random_num($length)
 	return $text;
 }
 
-function logged($con)
+function check_login_bool($con)
 {
 
 	if (isset($_SESSION['user_id'])) {

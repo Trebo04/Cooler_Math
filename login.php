@@ -125,6 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 width: 100%;
             }
         }
+
         #box {
             width: 500px;
             margin: auto;
@@ -142,9 +143,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <h1>Account Login<hr></h1>
+            <h1>Account Login
+                <hr>
+            </h1>
 
-                <!--
+            <!--
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -162,38 +165,44 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <button type="button" class="cancelbtn">Cancel</button>
                 </div>
     -->
-                <div id="box">
+            <div id="box">
 
-                    <form method="post">
-                        <div class="imgcontainer">
-                            <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
-                        </div>
-                        
-                        <?php
-                        $condition = logged($con);
+                <form method="post">
+                    <div class="imgcontainer">
+                        <img src="/cooler_math/png/high_def_icon.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <?php
+                    $condition = check_login_bool($con);
+
+                    if ($condition) {
                         $user_data = check_login($con);
+                        echo "Hello "; echo $user_data['user_name'];
+                    } else {
+                        echo "Login to Continue";
+                    }
 
-                        if($condition) {
-                            echo $user_data['user_name'];
-                        }
-                        else {
-                            echo "Login to Continue";
-                        }
-                        ?>
+                    if($condition) :
+                    ?>
+                    <button href="logout.php">Logout</button>
+                    <?php endif; ?>
+                    
+                    <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
+                    <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
 
-                        <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
-                        <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
-
-                        <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
-                        <button type="button" class="cancelbtn" type="">Cancel</button>
-                        <div class="container">
+                    <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
+                    <button type="button" class="cancelbtn" type="">Cancel</button>
+                    <div class="container">
                         <div style="text-align: right"><a href="signup.php">Click to Signup</a></div>
                         <div style="text-align: right"><a href="home.php">Forgot Password?</a></div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+            </div>
             </form>
         </div>
+
+
+
         <!--<footer id="footer">
             
 <a href="legal.php">Conditions of Use</a>
