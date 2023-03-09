@@ -184,18 +184,25 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                     if($condition) :
                     ?>
-                    <button href="logout.php">Logout</button>
+                    <br>
+                    <a href='logout.php'>Logout?</a>
+                    <br>
+                    <a href='home.php'>Return Home?</a>
+                    
                     <?php endif; ?>
+                    <?php
+                    if(!$condition) :
+                    ?>
                     
                     <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
                     <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
 
                     <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
-                    <button type="button" class="cancelbtn" type="">Cancel</button>
                     <div class="container">
                         <div style="text-align: right"><a href="signup.php">Click to Signup</a></div>
                         <div style="text-align: right"><a href="home.php">Forgot Password?</a></div>
                     </div>
+                    <?php endif; ?>
                 </form>
             </div>
             </form>
