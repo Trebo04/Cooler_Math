@@ -31,6 +31,7 @@ $user_data = check_login($con);
                     <li><a href="home.php">Home</a></li>
                     <li><a href="asteroids.php">Asteroids</a></li>
                     <li><a href="pong.php">PONG</a></li>
+                    <li><a href="wallball.php">Wall Ball</a></li>
                     <li style="float: right"><a href="logout.php">Logout</a></li>
                     <li style="float: right"><a href="login.php">Account | <?php echo $user_data['user_name']; ?></a></li>
                 </ul>
@@ -50,9 +51,7 @@ $user_data = check_login($con);
                     title="This takes you to the worse website">coolmath</a>.
             </p>
             <!--Default target is _self-->
-            <h2>Games</h2>
-            <li><a href="asteroids.php">Asteroids</a></li>
-            <li><a href="pong.php">PONG</a></li>
+            <img src="coolguy.png">
         </div>
         <footer id="footer">
             <!--

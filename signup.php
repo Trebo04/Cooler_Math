@@ -136,8 +136,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		<form method="post">
 			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
 
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
+			<input id="text" type="text" placeholder="Create Username" name="user_name"><br><br>
+			<input id="text" type="password" placeholder="Create Password" name="password"><br><br>
 
 			<input id="button" type="submit" value="Signup"><br><br>
 

@@ -177,31 +177,32 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                     if ($condition) {
                         $user_data = check_login($con);
-                        echo "Hello "; echo $user_data['user_name'];
+                        echo "Hello ";
+                        echo $user_data['user_name'];
                     } else {
                         echo "Login to Continue";
                     }
 
-                    if($condition) :
-                    ?>
-                    <br>
-                    <a href='logout.php'>Logout?</a>
-                    <br>
-                    <a href='home.php'>Return Home?</a>
-                    
+                    if ($condition):
+                        ?>
+                        <div class="container">
+                            <button type="button" onclick="window.location.href='logout.php'">Want to Logout?</button>
+                            <button type="button" onclick="window.location.href='home.php'">Return Home?</button>
+                        </div>
+
                     <?php endif; ?>
                     <?php
-                    if(!$condition) :
-                    ?>
-                    
-                    <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
-                    <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
+                    if (!$condition):
+                        ?>
 
-                    <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
-                    <div class="container">
-                        <div style="text-align: right"><a href="signup.php">Click to Signup</a></div>
-                        <div style="text-align: right"><a href="home.php">Forgot Password?</a></div>
-                    </div>
+                        <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
+                        <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
+
+                        <input id="button" type="submit" value="Login" style="background-color: aqua"><br><br>
+                        <div class="container">
+                            <button id="button" type="button" onclick="window.location.href='signup.php'">Want to Signup?</button>
+                            <button id="button" type="button" onclick="window.location.href='home.php'">Forgot Password?</button>
+                        </div>
                     <?php endif; ?>
                 </form>
             </div>
