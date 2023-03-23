@@ -43,11 +43,11 @@ $user_data = check_login($con);
             </nav>
             <h1>
                 PONG
-                <br />
-                <hr />
+                <br/>
+                <hr/>
                 <!--<div id="start">START</div>-->
                 <div id="gameContainer">
-                    <canvas id="gameBoard" width="1250" height="600"></canvas>
+                    <canvas id="gameBoard" width="1000" height="600"></canvas>
                     <div id="scoreText">0 : 0</div>
                     <button id="resetBtn" style="font-family: customfont">RESET</button>
                 </div>
@@ -57,10 +57,10 @@ $user_data = check_login($con);
         </div>
         <footer id="footer">
             <!--
-<a href="legal.php">Conditions of Use</a>
-<a href="legal.php">Privacy Notice</a>
-<a href="legal.php">Interest-Based Ads</a>
--->
+            <a href="legal.php">Conditions of Use</a>
+            <a href="legal.php">Privacy Notice</a>
+            <a href="legal.php">Interest-Based Ads</a>
+            -->
             <br />Cooler Math Games is optimized for gaming by gamers. Games might
             be simplified to improve gaming for bad gamers. Games are constantly
             reviewed to avoid errors, but we cannot warrant full correctness of all

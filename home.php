@@ -51,7 +51,6 @@ $user_data = check_login($con);
                     title="This takes you to the worse website">coolmath</a>.
             </p>
             <!--Default target is _self-->
-            <img src="coolguy.png">
         </div>
         <footer id="footer">
             <!--

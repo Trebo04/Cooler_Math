@@ -186,6 +186,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     if ($condition):
                         ?>
                         <div class="container">
+                            <h2>You're Logged In</h2>
+                            <img src="coolguy.png">
                             <button type="button" onclick="window.location.href='logout.php'">Want to Logout?</button>
                             <button type="button" onclick="window.location.href='home.php'">Return Home?</button>
                         </div>
@@ -194,7 +196,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <?php
                     if (!$condition):
                         ?>
-
                         <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
                         <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
 
