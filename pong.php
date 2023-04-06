@@ -51,8 +51,24 @@ $user_data = check_login($con);
                     <div id="scoreText">0 : 0</div>
                     <button id="resetBtn" style="font-family: customfont">RESET</button>
                 </div>
-                <script src="/cooler_math/javascript/pong.js"></script>
+                <script src="/cooler_math/javascript/pong.js">
+
+                </script>
             </h1>
+            <table style="width:fixed">
+            <tr>
+                <th>User</th>
+                <th>Opponent</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>90</td>
+            </tr>
+            </table>
             <br><br><br>
         </div>
         <footer id="footer">
