@@ -16,45 +16,18 @@ $user_data = check_login($con);
 <html lang="en">
 
 <head>
-    <style>
-        #page-container {
-            font-family: "customfont";
-        }
-    </style>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/cooler_math/png/icon.png" />
-    <link rel="apple-touch-icon" sizes="128x128" href="/cooler_math/png/high_def_icon.png" />
-    <link href="/cooler_math/css/main.css" rel="stylesheet" />
-    <title>PONG | Cooler Math</title>
 </head>
 
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <nav>
-                <ul id="rcorners1">
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="asteroids.php">Asteroids</a></li>
-                    <li><a href="pong.php">PONG</a></li>
-                    <li style="float: right">
-                        <a href="login.php">Account</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>
-                PONG
-                <br/>
-                <hr/>
-                <!--<div id="start">START</div>-->
                 <div id="gameContainer">
                     <canvas id="gameBoard" width="1000" height="600"></canvas>
                     <div id="scoreText">0 : 0</div>
                     <button id="resetBtn" style="font-family: customfont">RESET</button>
                 </div>
 
-                <iframe src="pong_game.php" title="" width="50%" height="100%" style="border:1px solid black;"></iframe>
+                <iframe src="pong_game.php" title=""></iframe>
 
                 <script src="/cooler_math/javascript/pong.js">
 
