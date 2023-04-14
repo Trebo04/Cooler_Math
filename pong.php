@@ -20,6 +20,14 @@ $user_data = check_login($con);
         #page-container {
             font-family: "customfont";
         }
+        iframe {
+            margin: auto;
+            width:100%;
+            height: 1000px;
+            overflow: hidden;
+            gap: 1000px;
+            border: none;
+        }
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,33 +55,26 @@ $user_data = check_login($con);
                 PONG
                 <br/>
                 <hr/>
-                <!--<div id="start">START</div>-->
-                <div id="gameContainer">
-                    <canvas id="gameBoard" width="1000" height="600"></canvas>
-                    <div id="scoreText">0 : 0</div>
-                    <button id="resetBtn" style="font-family: customfont">RESET</button>
-                </div>
 
-                <iframe src="pong_game.php" title="" width="50%" height="100%" style="border:1px solid black;"></iframe>
-
-                <script src="/cooler_math/javascript/pong.js">
-
+                <button id="start">Start Game</button>
+                <div id="iframeContainer"></div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                $(document).ready(function () {
+                    $("#start").click(function () {
+                        $("#iframeContainer").html(
+                            '<iframe src="pong_game.php"></iframe>'
+                        );
+                    });
+                });
                 </script>
+
+                <!--<div id="start">START</div>-->
+
+                <!--<script src="/cooler_math/javascript/pong.js">
+
+                </script>-->
             </h1>
-            <table style="width:fixed">
-            <tr>
-                <th>User</th>
-                <th>Opponent</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>70</td>
-                <td>90</td>
-            </tr>
-            </table>
             <br><br><br>
         </div>
         <footer id="footer">
