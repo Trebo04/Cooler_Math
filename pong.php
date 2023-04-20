@@ -56,7 +56,7 @@ $user_data = check_login($con);
                 <br/>
                 <hr/>
 
-                <button id="start">Start Game</button>
+                <button id="start">Start New Game</button>
                 <div id="iframeContainer"></div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script>
