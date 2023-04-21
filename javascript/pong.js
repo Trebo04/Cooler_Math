@@ -195,3 +195,13 @@ function resetGame(){
     clearInterval(intervalID);
     gameStart();
 };
+// Define a JavaScript variable
+var myVar = "Hello World";
+
+// Create an AJAX request
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'pong.php', true);
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+// Send the AJAX request with the JavaScript variable as a parameter
+xhr.send('myVar=' + myVar);
