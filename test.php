@@ -16,10 +16,18 @@ if (isset($_POST['myVar'])) {
     // If the 'myVar' parameter was not sent, print an error message
     echo "Error: 'myVar' parameter not found."."<br>";
 }
-
 /*
 // Dump the contents of the $_POST array
 var_dump($_POST);
 */
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "dumb";
+
+$id = random_num(11);
+
+$query = "INSERT INTO dumb ()"
 
 ?>
