@@ -33,13 +33,15 @@ $user_data = check_login($con);
                     <li><a href="pong.php">PONG</a></li>
                     <li><a href="wallball.php">Wall Ball</a></li>
                     <li style="float: right"><a href="logout.php">Logout</a></li>
-                    <li style="float: right"><a href="login.php">Account | <?php echo $user_data['user_name']; ?></a></li>
+                    <li style="float: right"><a href="login.php">Account |
+                            <?php echo $user_data['user_name']; ?>
+                        </a></li>
                 </ul>
             </nav>
             <div id="title">
                 <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
             </div>
-            <hr/>
+            <hr />
             <h2>About</h2>
             <p>
                 This website <i>will</i>
@@ -50,14 +52,41 @@ $user_data = check_login($con);
                 <a href="https://www.coolmath.com" target="_blank"
                     title="This takes you to the worse website">coolmath</a>.
             </p>
+            <h2>PONG Highscores</h2>
+            <table style="margin: 0px auto;">
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <?php ?>
+                    </td>
+                    <td>
+                        <?php ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <?php ?>
+                    </td>
+                    <td>
+                        <?php ?>
+                    </td>
+                </tr>
+            </table>
             <!--Default target is _self-->
         </div>
         <footer id="footer">
             <!--
-<a href="legal.php">Conditions of Use</a>
-<a href="legal.php">Privacy Notice</a>
-<a href="legal.php">Interest-Based Ads</a>
--->
+            <a href="legal.php">Conditions of Use</a>
+            <a href="legal.php">Privacy Notice</a>
+            <a href="legal.php">Interest-Based Ads</a>
+            -->
+            <!--
             Cooler Math Games is optimized for gaming by gamers. Games might be
             simplified to improve gaming for bad gamers. Games are constantly
             reviewed to avoid errors, but I cannot warrant full correctness of all
@@ -66,6 +95,8 @@ $user_data = check_login($con);
             understanding my <a href="legal.php">legal</a> page. <br />Copyright
             2022-<span style="color: aqua; font-size: small">∞</span> by Me. All
             Rights Reserved.
+            -->
+            <a href="privacy_policy.php">privacy policy</a> | <a href="legal.php">legal</a>
         </footer>
     </div>
 </body>

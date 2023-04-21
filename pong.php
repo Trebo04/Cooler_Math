@@ -7,8 +7,6 @@ include("functions.php");
 
 $user_data = check_login($con);
 
-
-
 ?>
 
 <!-- Hello Inspect Element :D -->
@@ -55,7 +53,7 @@ $user_data = check_login($con);
                 PONG
                 <br/>
                 <hr/>
-
+<!--
                 <button id="start">Start New Game</button>
                 <div id="iframeContainer"></div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -68,6 +66,8 @@ $user_data = check_login($con);
                     });
                 });
                 </script>
+            -->
+            <iframe src="pong_game.php"></iframe>
 
                 <!--<div id="start">START</div>-->
 
