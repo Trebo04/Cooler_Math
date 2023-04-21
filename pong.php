@@ -7,9 +7,6 @@ include("functions.php");
 
 $user_data = check_login($con);
 
-$myVar = $_POST['myVar'];
-echo $myVar; // Output: Hello World
-
 ?>
 
 <!-- Hello Inspect Element :D -->

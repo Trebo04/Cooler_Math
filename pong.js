@@ -195,13 +195,26 @@ function resetGame(){
     clearInterval(intervalID);
     gameStart();
 };
-// Define a JavaScript variable
+// Define the value of the myVar variable
 var myVar = "Hello World";
 
-// Create an AJAX request
+// Create a new XMLHttpRequest object
 var xhr = new XMLHttpRequest();
-xhr.open('POST', 'pong.php', true);
+
+// Specify the HTTP method, URL, and asynchronous flag for the request
+xhr.open('POST', 'pong_game.php', true);
+
+// Set the Content-Type header to indicate that the request body contains form data
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-// Send the AJAX request with the JavaScript variable as a parameter
+// Define the callback function to be called when the readyState of the request changes
+xhr.onreadystatechange = function() {
+  // Check if the request is done and the status code is OK
+  if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+    // Log the response from the server to the console
+    console.log(this.responseText);
+  }
+};
+
+// Send the request with the myVar parameter in the request body
 xhr.send('myVar=' + myVar);
