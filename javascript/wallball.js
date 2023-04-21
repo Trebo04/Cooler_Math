@@ -142,8 +142,8 @@ function changeDirection(event){
     const keyPressed = event.keyCode;
     const paddle1Up = 87;
     const paddle1Down = 83;
-    const paddle2Up = 38;
-    const paddle2Down = 40;
+    const paddle2Up = 73;
+    const paddle2Down = 75;
 
     switch(keyPressed){
         case(paddle1Up):

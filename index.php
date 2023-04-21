@@ -28,9 +28,9 @@ $user_data = check_login($con);
         <div id="content-wrap">
             <nav>
                 <ul id="rcorners1">
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="home.php">Home</a></li>
                     <li><a href="asteroids.php">Asteroids</a></li>
-                    <li><a href="/php/pong.php">PONG</a></li>
+                    <li><a href="pong.php">PONG</a></li>
                     <li style="float: right"><a href="logout.php">Logout</a></li>
                     <li style="float: right"><a href="login.php">Account<br>
                             <?php echo $user_data['user_name']; ?>

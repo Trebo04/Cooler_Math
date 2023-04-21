@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+include("connection.php");
+include("functions.php");
+
+$user_data = check_login($con);
+
 ?>
 
 <!-- Hello Inspect Element :D -->
@@ -40,11 +47,11 @@
                 <hr />
                 <!--<div id="start">START</div>-->
                 <div id="gameContainer">
-                    <canvas id="gameBoard" width="1250" height="600"></canvas>
+                    <canvas id="gameBoard" width="600" height="600"></canvas>
                     <div id="scoreText">0 : 0</div>
                     <button id="resetBtn" style="font-family: customfont">RESET</button>
                 </div>
-                <script src="/cooler_math/javascript/pong.js"></script>
+                <script src="/cooler_math/javascript/wallball.js"></script>
             </h1>
             <br><br><br>
         </div>
