@@ -28,6 +28,6 @@ $dbname = "dumb";
 
 $id = random_num(11);
 
-$query = "INSERT INTO dumb ()"
+$query = "INSERT INTO dumb (id,name) values ('$id','$myVar')";
 
 ?>
