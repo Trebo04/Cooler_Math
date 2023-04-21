@@ -1,5 +1,7 @@
 <?php
 
+include("functions.php");
+
 /*
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -24,10 +26,18 @@ var_dump($_POST);
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "dumb";
+$dbname = "test";
+
+$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 $id = random_num(11);
 
-$query = "INSERT INTO dumb (id,name) values ('$id','$myVar')";
+$query = "INSERT INTO dumb (id,var) values ('$id','$myVar')";
+
+mysqli_query($con, $query);
+
+header("Location: test_page.php");
+
+die;
 
 ?>
