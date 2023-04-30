@@ -19,7 +19,7 @@ $user_data = check_login($con);
         }
 
         canvas {
-            width: 75%;
+            width: 40%;
         }
     </style>
     <meta charset="UTF-8" />
@@ -50,7 +50,7 @@ $user_data = check_login($con);
                 <br>
                 <hr>
                 <div id="gameContainer">
-                    <canvas id="gameBoard" width="650%" height="650%"></canvas>
+                    <canvas id="gameBoard" width="600%" height="600%"></canvas>
                     <div id="scoreText">0 : 0</div>
                     <button id="resetBtn" style="font-family: customfont">RESET AND SAVE SCORE</button>
                 </div>
