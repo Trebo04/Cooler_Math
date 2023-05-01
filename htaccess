@@ -14,7 +14,7 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-DirectoryIndex home.php
+DirectoryIndex home.php login.php
 
 ErrorDocument 403 https://errors.infinityfree.net/errors/403/
 ErrorDocument 404 https://errors.infinityfree.net/errors/404/
