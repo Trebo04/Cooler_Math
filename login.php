@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         /* Avatar image */
         img.avatar {
-            width: 25%;
+            width: 15%;
             border-radius: 50%;
         }
 
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="icon.png" />
     <link rel="apple-touch-icon" sizes="128x128" href="high_def_icon.png" />
-    <link href="main.css" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet" />
     <title>Login | Cooler Math</title>
 </head>
 
@@ -120,45 +120,45 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div id="content-wrap">
             <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
             <hr>
-                <form method="post">
-                    <div class="imgcontainer">
-                        <img src="profile_pic.png" alt="Avatar" class="avatar">
+            <form method="post">
+                <div class="imgcontainer">
+                    <img src="profile_pic.png" alt="Avatar" class="avatar">
+                </div>
+
+                <?php
+                $condition = check_login_bool($con);
+
+                if ($condition) {
+                    $user_data = check_login($con);
+                    echo "Hello ";
+                    echo $user_data['user_name'];
+                } else {
+                    echo "Login to Continue";
+                }
+
+                if ($condition):
+                    ?>
+                    <div class="container">
+                        <h2>You're Logged In</h2>
+                        <img src="coolguy.png"><br><br>
+                        <button type="button" onclick="window.location.href='logout.php'">Logout</button>
+                        <button type="button" onclick="window.location.href='home.php'">Return Home</button>
                     </div>
 
-                    <?php
-                    $condition = check_login_bool($con);
-
-                    if ($condition) {
-                        $user_data = check_login($con);
-                        echo "Hello ";
-                        echo $user_data['user_name'];
-                    } else {
-                        echo "Login to Continue";
-                    }
-
-                    if ($condition):
-                        ?>
-                        <div class="container">
-                            <h2>You're Logged In</h2>
-                            <img src="coolguy.png"><br><br>
-                            <button type="button" onclick="window.location.href='logout.php'">Logout</button>
-                            <button type="button" onclick="window.location.href='home.php'">Return Home</button>
-                        </div>
-
-                    <?php endif; ?>
-                    <?php
-                    if (!$condition):
-                        ?>
-                        <div class="container">
-                            <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
-                            <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
-                            <button id="button" type="submit" value="Login" style="background-color: aqua">Login</button>
-                            <button id="button" type="button" onclick="window.location.href='signup.php'">Signup</button>
-                            <button id="button" type="button" onclick="window.location.href='home.php'">Forgot
-                                Password?</button>
-                        </div>
-                    <?php endif; ?>
-                </form>
+                <?php endif; ?>
+                <?php
+                if (!$condition):
+                    ?>
+                    <div class="container">
+                        <input id="text" type="text" placeholder="Enter Username" name="user_name"><br><br>
+                        <input id="text" type="password" placeholder="Enter Password" name="password"><br><br>
+                        <button id="button" type="submit" value="Login" style="background-color: aqua">Login</button>
+                        <button id="button" type="button" onclick="window.location.href='signup.php'">Signup</button>
+                        <button id="button" type="button" onclick="window.location.href='home.php'">Forgot
+                            Password?</button>
+                    </div>
+                <?php endif; ?>
+            </form>
         </div>
         <footer id="footer">
             <a href="privacy_policy.php">privacy policy</a> | <a href="legal.php">legal</a>

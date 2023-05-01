@@ -7,25 +7,25 @@ include("functions.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	//something was posted
-	$user_name = $_POST['user_name'];
-	$password = $_POST['password'];
+    //something was posted
+    $user_name = $_POST['user_name'];
+    $password = $_POST['password'];
 
-	$hash = password_hash($password, PASSWORD_DEFAULT);
+    $hash = password_hash($password, PASSWORD_DEFAULT);
 
-	if (!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
+    if (!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
 
-		//save to database
-		$user_id = random_num(11);
-		$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$hash')";
+        //save to database
+        $user_id = random_num(11);
+        $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$hash')";
 
-		mysqli_query($con, $query);
+        mysqli_query($con, $query);
 
-		header("Location: login.php");
-		die;
-	} else {
-		echo "Please enter some valid information!";
-	}
+        header("Location: login.php");
+        die;
+    } else {
+        echo "Please enter some valid information!";
+    }
 }
 ?>
 
@@ -34,17 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html>
 
 <head>
-	<style>
-		body {
-			background-color: #252525
-		}
-	</style>
-	<link href="main.css" rel="stylesheet" />
-	<title>Signup | Cooler Math</title>
-</head>
-
-<body>
-<style>
+    <style>
         /* Bordered form */
         form {
             /* border: 3px solid #f1f1f1; */
@@ -106,18 +96,32 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 float: none;
             }
         }
+
+        body {
+            background-color: #252525
+        }
     </style>
-	<h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
-	<h2>Account Signup</h2>
-	<hr>
-	<div class="container">
-		<form method="post">
-			<input id="text" type="text" placeholder="Create Username" name="user_name"><br><br>
-			<input id="text" type="password" placeholder="Create Password" name="password"><br><br>
-			<button id="button" type="submit" value="Signup">Signup</button>
-			<button id="button" type="button" onclick="window.location.href='login.php'">Return to Login</button>
-		</form>
-	</div>
+    <link href="main.css" rel="stylesheet" />
+    <title>Signup | Cooler Math</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
+            <h2>Account Signup</h2>
+            <hr>
+            <div class="container">
+                <form method="post">
+                    <input id="text" type="text" placeholder="Create Username" name="user_name"><br><br>
+                    <input id="text" type="password" placeholder="Create Password" name="password"><br><br>
+                    <button id="button" type="submit" value="Signup">Signup</button>
+                    <button id="button" type="button" onclick="window.location.href='login.php'">Return to
+                        Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
