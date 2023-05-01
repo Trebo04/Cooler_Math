@@ -46,19 +46,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <style>
         /* Bordered form */
         form {
-            border: 3px solid #f1f1f1;
-            background-color: white;
-            color: black;
-        }
-
-        form a {
-            color: black;
+            /* border: 3px solid #f1f1f1; */
+            background-color: #252525;
+            color: aqua;
+            width: 75%;
+            margin: auto;
         }
 
         /* Full-width inputs */
         input[type=text],
         input[type=password] {
-            width: 100%;
+            width: 75%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
@@ -75,20 +73,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             margin: 8px 0;
             border: none;
             cursor: pointer;
-            width: 100%;
+            width: fit-content;
             border-radius: 25px;
         }
 
         /* Add a hover effect for buttons */
         button:hover {
             opacity: 0.8;
-        }
-
-        /* Extra style for the cancel button (red) */
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
         }
 
         /* Center the avatar image inside this container */
@@ -99,19 +90,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         /* Avatar image */
         img.avatar {
-            width: 20%;
+            width: 25%;
             border-radius: 50%;
         }
 
-        /* Add padding to containers */
         .container {
             padding: 16px;
-        }
-
-        /* The "Forgot password" text */
-        span.psw {
-            float: right;
-            padding-top: 16px;
         }
 
         /* Change styles for span and cancel button on extra small screens */
@@ -120,15 +104,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 display: block;
                 float: none;
             }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-
-        #box {
-            width: 75%;
-            margin: auto;
         }
     </style>
     <meta charset="UTF-8" />
@@ -136,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="icon.png" />
     <link rel="apple-touch-icon" sizes="128x128" href="high_def_icon.png" />
-    <link href="main.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet"/>
     <title>Login | Cooler Math</title>
 </head>
 
@@ -145,8 +120,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div id="content-wrap">
             <h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
             <hr>
-            <div id="box">
-
                 <form method="post">
                     <div class="imgcontainer">
                         <img src="profile_pic.png" alt="Avatar" class="avatar">
@@ -167,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         ?>
                         <div class="container">
                             <h2>You're Logged In</h2>
-                            <img src="coolguy.png">
+                            <img src="coolguy.png"><br><br>
                             <button type="button" onclick="window.location.href='logout.php'">Logout</button>
                             <button type="button" onclick="window.location.href='home.php'">Return Home</button>
                         </div>
@@ -186,8 +159,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </div>
                     <?php endif; ?>
                 </form>
-            </div>
-            </form>
         </div>
         <footer id="footer">
             <a href="privacy_policy.php">privacy policy</a> | <a href="legal.php">legal</a>

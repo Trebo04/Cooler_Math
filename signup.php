@@ -44,104 +44,78 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-	<style>
-		/* Bordered form */
-		form {
-			border: 3px solid #f1f1f1;
-			background-color: white;
-			color: black;
-		}
+<style>
+        /* Bordered form */
+        form {
+            /* border: 3px solid #f1f1f1; */
+            background-color: #252525;
+            color: aqua;
+            width: 75%;
+            margin: auto;
+        }
 
-		form a {
-			color: black;
-		}
+        /* Full-width inputs */
+        input[type=text],
+        input[type=password] {
+            width: 75%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
 
-		/* Full-width inputs */
-		input[type=text],
-		input[type=password] {
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-			border-radius: 25px;
-		}
+        /* Set a style for all buttons */
+        button {
+            background-color: aqua;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+            border-radius: 25px;
+        }
 
-		/* Set a style for all buttons */
-		button {
-			background-color: aqua;
-			color: black;
-			padding: 14px 20px;
-			margin: 8px 0;
-			border: none;
-			cursor: pointer;
-			width: 100%;
-			border-radius: 25px;
-		}
+        /* Add a hover effect for buttons */
+        button:hover {
+            opacity: 0.8;
+        }
 
-		/* Add a hover effect for buttons */
-		button:hover {
-			opacity: 0.8;
-		}
+        /* Center the avatar image inside this container */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
 
-		/* Extra style for the cancel button (red) */
-		.cancelbtn {
-			width: auto;
-			padding: 10px 18px;
-			background-color: #f44336;
-		}
+        /* Avatar image */
+        img.avatar {
+            width: 25%;
+            border-radius: 50%;
+        }
 
-		/* Center the avatar image inside this container */
-		.imgcontainer {
-			text-align: center;
-			margin: 24px 0 12px 0;
-		}
+        .container {
+            padding: 16px;
+        }
 
-		/* Avatar image */
-		img.avatar {
-			width: 20%;
-			border-radius: 50%;
-		}
-
-		/* Add padding to containers */
-		.container {
-			padding: 16px;
-		}
-
-		/* The "Forgot password" text */
-		span.psw {
-			float: right;
-			padding-top: 16px;
-		}
-
-		/* Change styles for span and cancel button on extra small screens */
-		@media screen and (max-width: 300px) {
-			span.psw {
-				display: block;
-				float: none;
-			}
-
-			.cancelbtn {
-				width: 100%;
-			}
-		}
-
-		#box {
-			width: 500px;
-			margin: auto;
-		}
-	</style>
-	<h1>Account Signup</h1>
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+        }
+    </style>
+	<h1>😎Cooler Math Games<span style="cursor: wait">🤔</span></h1>
+	<h2>Account Signup</h2>
 	<hr>
-	<div id="box">
-
+	<div class="container">
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
 			<input id="text" type="text" placeholder="Create Username" name="user_name"><br><br>
 			<input id="text" type="password" placeholder="Create Password" name="password"><br><br>
-			<input id="button" type="submit" value="Signup"><br><br>
-			<a href="login.php">Click to Login</a><br><br>
+			<button id="button" type="submit" value="Signup">Signup</button>
+			<button id="button" type="button" onclick="window.location.href='login.php'">Return to Login</button>
 		</form>
 	</div>
 </body>
